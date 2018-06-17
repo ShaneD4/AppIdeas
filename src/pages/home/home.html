@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title class="main-nav">Dashboard</ion-title>
+    <ion-title class="main-nav"><ion-icon name="speedometer"></ion-icon> Dashboard</ion-title>
   </ion-navbar>
   <!-- <ion-navbar>
     <ion-title class="secondary-nav">
@@ -24,22 +24,46 @@
     <div class="card-subtitle">Currently clocked in</div>
   </ion-card>
 
-  <br>
 
-  <ion-list>
-    <ion-item>
+  <ion-card class="dashboard-list dashboard-background">
+    <ion-card-header>
+        <ion-icon name="menu" item-start></ion-icon>
+      Menu
+    </ion-card-header>
+  
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="pulse" item-start></ion-icon>
         VHC
-    </ion-item>
-    <ion-item>
+      </button>
+  
+      <button ion-item>
+        <ion-icon name="stats" item-start></ion-icon>
         Appraisals
-    </ion-item>
-    <ion-item>
+      </button>
+  
+      <button ion-item>
+        <ion-icon name="car" item-start></ion-icon>
         Vehicles
-    </ion-item>
-    <ion-item>
-        Herbology
-    </ion-item>
-  </ion-list>
+      </button>
+  
+      <button ion-item>
+        <ion-icon name="card" item-start></ion-icon>
+        Service Cards
+      </button>
+  
+      <!-- <button ion-item>
+        <ion-icon name="beer" item-start></ion-icon>
+        Pub
+      </button>
+  
+      <button ion-item>
+        <ion-icon name="planet" item-start></ion-icon>
+        Space
+      </button> -->
+  
+    </ion-list>
+  </ion-card>
 
   <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>

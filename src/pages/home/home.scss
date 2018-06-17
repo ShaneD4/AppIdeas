@@ -6,11 +6,11 @@ page-home {
     overflow: hidden;
 }
 .toolbar-title{ 
-    color: #ccc;
+    color: rgb(34, 34, 34);
 }
 
 .toolbar-background{
-    background-color: #33363a;
+    background-color: rgb(245, 245, 245);
 }
 .secondary-nav{
     background-color: #33363a;
@@ -39,6 +39,10 @@ page-home {
     // background-image: url('https://stmed.net/sites/default/files/blue-white-wallpapers-25171-9939579.jpg');
 }
 
+.dashboard-background{
+    background-image: url("../../assets/imgs/img.jpg");
+}
+
 .card-background-page {
 
     ion-card {
@@ -46,7 +50,7 @@ page-home {
       text-align: center;
       width: 100vw;
       height: 28vh;
-      background-color: #33363a;
+      //background-color: #33363a;
     }
   
     .card-title {
@@ -64,6 +68,10 @@ page-home {
       top: 78%;
       width: 100%;
       color: #fff;
+    }
+
+    .dashboard-list{
+        height: 72vh;
     }
   
   }
