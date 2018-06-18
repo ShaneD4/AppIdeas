@@ -2,6 +2,27 @@ page-home {
 
 }
 
+.vhc-icon{
+    color: #741b47;
+}
+
+.appraisals-icon{
+    color: #073763;
+}
+
+.vehicles-icon{
+    color: #134f5c;
+}
+
+.jobcard-icon{
+    color: #274e13;
+}
+
+.stats-img{
+    width: 80vw;
+    margin-left: 10vw;
+}
+
 .scroll-content{
     overflow: hidden;
 }
@@ -32,7 +53,7 @@ page-home {
     height: 20vh;
     width: 20vw;
     margin-left: 40vw;
-    margin-top: 4vh;
+    margin-top: 8vh;
 }
 
 .dashboard-main{
@@ -50,23 +71,23 @@ page-home {
       position: relative;
       text-align: center;
       width: 100vw;
-      height: 28vh;
+      height: 35vh;
       //background-color: #33363a;
     }
   
     .card-title {
       position: absolute;
       top: 61%;
-      font-size: 1.7em;
+      font-size: 1.5em;
       width: 100%;
       font-weight: bold;
       color: #fff;
     }
   
     .card-subtitle {
-      font-size: 1.0em;
+      font-size: 0.8em;
       position: absolute;
-      top: 78%;
+      top: 72%;
       width: 100%;
       color: #fff;
     }
