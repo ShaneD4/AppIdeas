@@ -2,6 +2,16 @@ page-home {
 
 }
 
+ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
 .vhc-icon{
     color: #741b47;
 }
@@ -48,12 +58,20 @@ page-home {
 }
 
 .avatar-img{
+    // position: absolute;
+    // top: 0px;
+    // height: 80px;
+    // width: 80px;
+    // margin-left: 40vw;
+    // margin-top: 6vh;
+
     position: absolute;
     top: 0px;
-    height: 20vh;
-    width: 20vw;
-    margin-left: 40vw;
-    margin-top: 8vh;
+    margin-top: 5vh;
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    width: 100vw;
 }
 
 .dashboard-main{
@@ -61,8 +79,10 @@ page-home {
 }
 
 .dashboard-background{
-    background-image: url("../../assets/imgs/img2.jpg");
-    background-repeat: no-repeat;
+    // background-image: url("../../assets/imgs/img2.jpg");
+    // background-repeat: no-repeat;
+    //background: linear-gradient(#04050a, #6b7c9c);
+
 }
 
 .card-background-page {
@@ -74,10 +94,14 @@ page-home {
       height: 35vh;
       //background-color: #33363a;
     }
+
+    ion-img{
+        background: transparent !important;
+    }
   
     .card-title {
       position: absolute;
-      top: 61%;
+      top: 19vh;
       font-size: 1.5em;
       width: 100%;
       font-weight: bold;
@@ -87,7 +111,7 @@ page-home {
     .card-subtitle {
       font-size: 0.8em;
       position: absolute;
-      top: 72%;
+      top: 23vh;
       width: 100%;
       color: #fff;
     }

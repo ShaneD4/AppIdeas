@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { VhcnewPage } from '../vhcnew/vhcnew';
 
 /**
- * Generated class for the VhcPage page.
+ * Generated class for the VhcnewPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,23 +10,28 @@ import { VhcnewPage } from '../vhcnew/vhcnew';
 
 @IonicPage()
 @Component({
-  selector: 'page-vhc',
-  templateUrl: 'vhc.html',
+  selector: 'page-vhcnew',
+  templateUrl: 'vhcnew.html',
 })
-export class VhcPage {
-  vhcNewPage = VhcnewPage;
+export class VhcnewPage {
+
+  hideMe = true;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad VhcPage');
+    console.log('ionViewDidLoad VhcnewPage');
   }
 
-  nextPage() {
-    console.log(this.navCtrl.parent);
+  hide(){
+    if(this.hideMe == false){
+      this.hideMe = true;
+    }
+    else{
+      this.hideMe = false;
+    }
+    
   }
-
 
 }

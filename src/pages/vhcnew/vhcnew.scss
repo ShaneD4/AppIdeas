@@ -1,0 +1,45 @@
+page-vhcnew { 
+    $toolbar-md-title-font-size: 1rem;
+}
+
+
+.second-toolbar{
+    border: 1px;
+}
+
+.incomplete-header{
+    background-color: #6aa84f;
+    color: white;
+    border: black;
+    padding-left: 10px;
+
+    .title-incomplete{
+        margin-top: 4px;
+    }
+
+    button{
+        width: 13vw;
+        text-transform: none;
+        padding: 0px;
+        margin: 0px;
+        height: 20px;
+        margin-bottom: 2px;
+    }
+}
+
+.incomplete-list{
+    width: 97vw;
+}
+
+.new-header{
+    background-color:#597eaa;
+    color: white;
+    border-color: black;
+    border-width: 2px;
+    padding-left: 10px;
+}
+
+.show-icon{
+    color: white;
+}
+

@@ -9,7 +9,7 @@
 
   <ion-content class="card-background-menu">
     <ion-card>
-      <img class="menu-avatar" src="../../assets/imgs/bg-blue.png"/>
+      <img class="menu-avatar" src="https://i.hipertextual.com/2017/06/28/indigo-pentagonal-background.md.png"/>
       <div class="avatar-img-menu">
         <img src="https://avatars2.githubusercontent.com/u/498852?s=400&v=4"/>
       </div>
@@ -21,6 +21,7 @@
   
     <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon class="jobcard-icon" name="arrow-forward" item-end></ion-icon>
         {{p.title}}
       </button>
     </ion-list>

@@ -1,0 +1,97 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title class="main-nav">VHC</ion-title>
+    </ion-navbar>
+    <!-- <ion-navbar>
+      <ion-title class="secondary-nav">
+        Test
+      </ion-title>
+    </ion-navbar> -->
+    <ion-toolbar class="second-toolbar">
+        <ion-title>New VHC</ion-title>
+        <!-- <button ion-button icon-start color="light">
+            <ion-icon name="arrow-round-back"></ion-icon>
+            Back
+          </button> -->
+          
+      </ion-toolbar>
+  </ion-header>
+
+
+
+<ion-content>
+    <ion-scroll scrollY="true" style="width: 100%; height: 100%;">
+
+    <ion-row class="incomplete-header">
+        <ion-col col-10>
+           <div class="title-incomplete">Incomplete</div>
+        </ion-col>
+        <ion-col col-2>
+          <button  color="light" small="true" ion-button (click)="hide()">
+                <p *ngIf="hideMe">Hide ˅ </p>
+                <p *ngIf="!hideMe">Show > </p>
+          
+          </button>
+        </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="hideMe">
+        <ion-col col-12>
+            <ion-card class="incomplete-list">
+                <ion-searchbar></ion-searchbar>
+
+                <ion-card-header>
+                  
+                </ion-card-header>
+              
+                <ion-card-content>
+                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                    <hr>
+                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                </ion-card-content>
+              
+              </ion-card>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="new-header">
+        <ion-col col-10>
+           New
+        </ion-col>
+        <ion-col col-2>
+          Hide
+          <ion-icon class="show-icon" name="arrow-dropdown" item-end></ion-icon>
+        </ion-col>
+    </ion-row>
+
+    <ion-row >
+        <ion-col col-12>
+            <ion-card class="incomplete-list">
+                <ion-searchbar></ion-searchbar>
+
+                <ion-card-header>
+                  
+                </ion-card-header>
+              
+                <ion-card-content>
+                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                    <hr>
+                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                    <hr>
+                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                    <hr>
+                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                    <hr>
+                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                </ion-card-content>
+              
+              </ion-card>
+        </ion-col>
+    </ion-row>
+
+    </ion-scroll>
+
+</ion-content>
