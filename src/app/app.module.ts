@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { VhcPage } from '../pages/vhc/vhc';
 import { VhcnewPage } from '../pages/vhcnew/vhcnew';
+import { AppraisalsPage } from '../pages/appraisals/appraisals';
+import { VehiclesPage } from '../pages/vehicles/vehicles';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +19,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     VhcPage,
-    VhcnewPage
+    VhcnewPage,
+    AppraisalsPage,
+    VehiclesPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     VhcPage,
-    VhcnewPage
+    VhcnewPage,
+    AppraisalsPage,
+    VehiclesPage
   ],
   providers: [
     StatusBar,

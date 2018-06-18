@@ -2,6 +2,22 @@ page-vhcnew {
     $toolbar-md-title-font-size: 1rem;
 }
 
+ion-content{
+    min-height: 100vh;
+}
+
+ion-item{
+    border: #597eaa;
+}
+
+.reg-pic{
+    width: 90vw;
+    height: 55px;
+}
+
+.get-details-button{
+    width: 90vw;
+}
 
 .second-toolbar{
     border: 1px;
@@ -31,12 +47,25 @@ page-vhcnew {
     width: 97vw;
 }
 
+
 .new-header{
-    background-color:#597eaa;
+    background-color: #597eaa;
     color: white;
-    border-color: black;
-    border-width: 2px;
+    border: black;
     padding-left: 10px;
+
+    .title-new{
+        margin-top: 4px;
+    }
+
+    button{
+        width: 13vw;
+        text-transform: none;
+        padding: 0px;
+        margin: 0px;
+        height: 20px;
+        margin-bottom: 2px;
+    }
 }
 
 .show-icon{

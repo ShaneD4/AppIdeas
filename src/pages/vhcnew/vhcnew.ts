@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { VhcPage } from '../vhc/vhc';
 
 /**
  * Generated class for the VhcnewPage page.
@@ -15,7 +16,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class VhcnewPage {
 
-  hideMe = true;
+  hideMe = false;
+  hideMeNew = true;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -32,6 +34,20 @@ export class VhcnewPage {
       this.hideMe = false;
     }
     
+  }
+
+  hideNew(){
+    if(this.hideMeNew == false){
+      this.hideMeNew = true;
+    }
+    else{
+      this.hideMeNew = false;
+    }
+    
+  }
+
+  goBack(){
+    this.navCtrl.setRoot(VhcPage);
   }
 
 }

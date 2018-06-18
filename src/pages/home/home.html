@@ -36,21 +36,23 @@
     </ion-card-header>
   
     <hr>
+
+    <ion-scroll scrollY="true" style="width: 100%; height: 100%;">
     
     <ion-list>
-      <button ion-item>
+      <button ion-item (click)="toVHCPage()">
         <ion-icon class="vhc-icon" name="pulse" item-start></ion-icon>
         VHC
       </button>
       <hr>
   
-      <button ion-item>
+      <button ion-item (click)="toAppraisalsPage()">
         <ion-icon class="appraisals-icon" name="stats" item-start></ion-icon>
         Appraisals
       </button>
       <hr>
   
-      <button ion-item>
+      <button ion-item (click)="toVehiclesPage()">
         <ion-icon class="vehicles-icon" name="car" item-start></ion-icon>
         Vehicles
       </button>
@@ -73,6 +75,8 @@
       </button> -->
   
     </ion-list>
+
+  </ion-scroll>
 
   </ion-card>
 

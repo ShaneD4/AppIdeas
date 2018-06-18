@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { VhcnewPage } from '../vhcnew/vhcnew';
 
 /**
- * Generated class for the VhcPage page.
+ * Generated class for the AppraisalsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,23 +10,16 @@ import { VhcnewPage } from '../vhcnew/vhcnew';
 
 @IonicPage()
 @Component({
-  selector: 'page-vhc',
-  templateUrl: 'vhc.html',
+  selector: 'page-appraisals',
+  templateUrl: 'appraisals.html',
 })
-export class VhcPage {
-  vhcNewPage = VhcnewPage;
+export class AppraisalsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad VhcPage');
+    console.log('ionViewDidLoad AppraisalsPage');
   }
-
-  newVhcPage() {
-    this.navCtrl.setRoot(this.vhcNewPage);
-  }
-
 
 }
