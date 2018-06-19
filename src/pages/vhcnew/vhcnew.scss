@@ -10,6 +10,17 @@ ion-item{
     border: #597eaa;
 }
 
+// .input-custom{
+//     border-width: 1px;
+//     // border-style: inset;
+//     border-style: solid;
+//     border-color: #597eaa;
+//     border-image: initial;
+//     height: 5vh;
+//     max-width: 50vw;
+//     position: right;
+// }
+
 .reg-pic{
     width: 90vw;
     height: 55px;
@@ -28,6 +39,9 @@ ion-item{
     color: white;
     border: black;
     padding-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2f4b23;
 
     .title-incomplete{
         margin-top: 4px;
@@ -45,6 +59,13 @@ ion-item{
 
 .incomplete-list{
     width: 97vw;
+    height: 77vh;
+}
+
+.vhc-new-section-img{
+    margin-top: -5vh;
+    width: 97vw;
+    margin-left: -4vw;
 }
 
 
@@ -53,6 +74,9 @@ ion-item{
     color: white;
     border: black;
     padding-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2a3a4e;
 
     .title-new{
         margin-top: 4px;

@@ -3,7 +3,7 @@
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title class="main-nav"><ion-icon name="pulse"></ion-icon> VHC</ion-title>
+      <ion-title class="main-nav"><ion-icon name="pulse" class="vhc-icon"></ion-icon> VHC</ion-title>
     </ion-navbar>
     <!-- <ion-navbar>
       <ion-title class="secondary-nav">
@@ -24,15 +24,15 @@
 
 
 
-<ion-content>
-    <ion-scroll scrollY="true" style="width: 100%; height: 100%;">
+<ion-content scroll="true">
+    
 
-    <ion-row class="incomplete-header">
+    <ion-row class="incomplete-header" (click)="hide()">
         <ion-col col-10>
            <div class="title-incomplete">Incomplete</div>
         </ion-col>
         <ion-col col-2>
-          <button outline color="light" small="true" ion-button (click)="hide()">
+          <button clear color="light" small="true" ion-button (click)="hide()">
                 <p *ngIf="hideMe">Hide ˅ </p>
                 <p *ngIf="!hideMe">Show > </p>
           
@@ -53,6 +53,12 @@
                     25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
                     <hr>
                     25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                    <hr>
+                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                    <hr>
+                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
+                    <hr>
+
                 </ion-card-content>
               
               </ion-card>
@@ -64,11 +70,6 @@
                <div class="title-new">New</div>
             </ion-col>
             <ion-col col-2>
-              <button outline color="light" small="true" ion-button (click)="hideNew()">
-                    <p *ngIf="hideMeNew">Hide ˅ </p>
-                    <p *ngIf="!hideMeNew">Show > </p>
-              
-              </button>
             </ion-col>
         </ion-row>
 
@@ -78,48 +79,50 @@
                 
 
                 <ion-card-header>
-                  
                 </ion-card-header>
               
                 <ion-card-content>
-                    <!-- 25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
-                    <hr>
-                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
-                    <hr>
-                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
-                    <hr>
-                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel
-                    <hr>
-                    25497 - MAZ7 - Mr Douglas Hurd -\n Land Rover - Range Rover Sport Sdv6\n Hse Estate 3.0 Automatic Diesel -->
-                    
-                    
-                    <!-- <img class="reg-pic" src="assets/imgs/yourreg.png"> -->
 
-                    <ion-item>
+                    <div class="vhc-new-section-img">
+                        <img src="assets/imgs/vhc-new-section.PNG"/>
+                    </div>
+
+
+                    <!-- <ion-item>
                             <ion-label color="primary">Registration</ion-label>
-                            <ion-input></ion-input>
+                           
+                                <ion-input type="text"></ion-input>
+                            
                     </ion-item>
 
                     <hr>
 
                     <ion-item>
                             <ion-label color="primary">Mileage</ion-label>
-                            <ion-input></ion-input>
+                            <span item-end>
+                                <ion-input class="input-custom"></ion-input>
+                            </span>    
                     </ion-item>
 
                     <hr>
 
-                    <button class="get-details-button" color="secondary" ion-button block icon-end>
+                    <button class="get-details-button" color="g-button" ion-button block icon-end>
                             Get Details
                     <ion-icon name="search"></ion-icon>
                     </button>
+
+                    <form>
+                            <ion-item>
+                              <ion-label>Todo</ion-label>
+                              <ion-input class="input-custom" type="text" name="title"></ion-input>
+                            </ion-item>
+                            <button ion-button type="submit" block>Add Todo</button>
+                    </form> -->
 
                 </ion-card-content>
               
               </ion-card>
         </ion-col>
     </ion-row>
-
-    </ion-scroll>
 
 </ion-content>

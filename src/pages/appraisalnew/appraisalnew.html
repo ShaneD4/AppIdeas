@@ -1,0 +1,63 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title class="main-nav"><ion-icon name="stats" class="appraisals-icon"></ion-icon> Appraisals</ion-title>
+    </ion-navbar>
+
+    <ion-toolbar border class="second-toolbar">
+            <ion-buttons left>
+                    <button ion-button icon-only color="royal" (click)="goBack()">
+                      <ion-icon name="arrow-back"></ion-icon>
+                    </button>
+                  </ion-buttons>
+                  <ion-title>New Appraisal</ion-title>
+
+          
+      </ion-toolbar>
+
+      
+  </ion-header>
+
+  
+
+
+
+<ion-content scroll="true">
+    
+
+    
+
+
+
+    <ion-row>
+        <ion-col col-12>
+            <ion-card class="incomplete-list">
+                
+
+                <ion-card-header>
+                </ion-card-header>
+              
+                <ion-card-content>
+
+                    <div class="appraisal-new-section-img">
+                        <img src="assets/imgs/appraisal-new-section.PNG"/>
+                    </div>
+
+
+
+
+                </ion-card-content>
+              
+              </ion-card>
+        </ion-col>
+    </ion-row>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar class="complete-footer">
+      <button class="complete-button" ion-button color="secondary" (click)="presentConfirm()"><ion-icon name="checkmark-circle-outline"></ion-icon>&nbsp; Complete Appraisal</button>
+    </ion-toolbar>
+</ion-footer>

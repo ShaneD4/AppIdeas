@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AppraisalnewPage } from '../appraisalnew/appraisalnew';
 
 /**
  * Generated class for the AppraisalsPage page.
@@ -14,12 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'appraisals.html',
 })
 export class AppraisalsPage {
+  appraisalsnewPage = AppraisalnewPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AppraisalsPage');
+  }
+
+  newAppraisalPage() {
+    this.navCtrl.setRoot(this.appraisalsnewPage);
   }
 
 }

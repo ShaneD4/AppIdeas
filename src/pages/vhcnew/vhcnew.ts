@@ -50,4 +50,6 @@ export class VhcnewPage {
     this.navCtrl.setRoot(VhcPage);
   }
 
+
+
 }
