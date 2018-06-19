@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { VhcPage } from '../pages/vhc/vhc';
 import { AppraisalsPage } from '../pages/appraisals/appraisals';
 import { VehiclesPage } from '../pages/vehicles/vehicles';
+import { TabbedPage } from '../pages/tabbed/tabbed';
 
 @Component({
   templateUrl: 'app.html'

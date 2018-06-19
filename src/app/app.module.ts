@@ -10,6 +10,8 @@ import { VhcnewPage } from '../pages/vhcnew/vhcnew';
 import { AppraisalsPage } from '../pages/appraisals/appraisals';
 import { VehiclesPage } from '../pages/vehicles/vehicles';
 import { AppraisalnewPage } from '../pages/appraisalnew/appraisalnew';
+import { TabbedPage } from '../pages/tabbed/tabbed';
+import { AppraisalvehicletabPage } from '../pages/appraisalvehicletab/appraisalvehicletab';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,11 +25,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     VhcnewPage,
     AppraisalsPage,
     VehiclesPage,
-    AppraisalnewPage
+    AppraisalnewPage,
+    TabbedPage,
+    AppraisalvehicletabPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {tabsPlacement: 'top'}),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,7 +42,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     VhcnewPage,
     AppraisalsPage,
     VehiclesPage,
-    AppraisalnewPage
+    AppraisalnewPage,
+    TabbedPage,
+    AppraisalvehicletabPage
   ],
   providers: [
     StatusBar,
